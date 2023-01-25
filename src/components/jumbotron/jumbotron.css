@@ -1,0 +1,63 @@
+.jumbo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        #f8f9fa 0%,
+        #f8f9fa 50%,
+        #ffffff 50%,
+        #ffffff 100%
+    );
+}
+
+.jumbo__content {
+    text-align: center;
+}
+
+.jumbo__content img {
+    width: 15rem;
+    background: #f8f9fa;
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+}
+
+.jumbo__content h5 {
+    font-size: 1rem;
+}
+
+.jumbo__content h1 {
+    font-size: 3rem;
+}
+
+.jumbo__content small {
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.jumbo__content small span {
+    color: #0075f6;
+}
+
+@media screen and (max-width: 600px) {
+    .jumbo__content img {
+        width: 12rem;
+        border: 5px solid #C0EEE4;
+    }
+
+    .jumbo__content h5 {
+        font-size: .9rem;
+    }
+    
+    .jumbo__content h1 {
+        font-size: 2rem;
+    }
+    
+    .jumbo__content small {
+        font-size: .8rem;
+        font-weight: 600;
+        color: black;
+    }
+}
