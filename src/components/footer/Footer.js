@@ -5,24 +5,26 @@ import { TfiTwitter } from 'react-icons/tfi';
 
 const Footer = () => {
   return (
-    <div className="footer__container">
-      <div className="footer__content">
-        <div className="footer__content-left">
-          <h1>Iqbal.</h1>
-        </div>
-        <div className="footer__content-right">
-          <h4>FOLLOW ME</h4>
-          <div className="content-social">
-            <AiOutlineInstagram className='social-icon'/>
-            <CiFacebook className='social-icon'/>
-            <TfiTwitter className='social-icon'/>
-          </div>
-        </div>
+    <footer>
+      <a href="#home" className='footer__logo'>Iqbal.</a>
+      <ul className="permalinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div className="footer__social">
+        <a href="https://facebook.com"><CiFacebook className='social-icon'/></a>
+        <a href="https://instagram.com"><AiOutlineInstagram className='social-icon'/></a>
+        <a href="https://twitter.com"><TfiTwitter className='social-icon'/></a>
       </div>
+
       <div className="footer__copyright">
-        <small>&copy; Muhammad Iqbal. All rights reserved.</small>
+        <small>&copy; Iqbal. All rights reserved.</small>
       </div>
-    </div>
+    </footer>
   );
 }
  
