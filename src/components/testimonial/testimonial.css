@@ -18,9 +18,14 @@
 .testimonial-item {
     background: #ffffff;
     text-align: center;
-    padding: 2rem;
     border-radius: 1rem;
     user-select: none;
+    padding: 2rem;
+}
+
+.client__content {
+    width: 70%;
+    margin: 2rem auto;
 }
 
 .client__avatar img {
@@ -28,15 +33,34 @@
     border-radius: 50%;
 }
 
+.client__name {
+    font-size: 1.1rem;
+    margin: .3rem 0;
+}
+
+.client__review {
+    font-size: .8rem;
+}
+
 @media screen and (max-width: 1024px) {
     .testimonial__list {
-        width: 80%;
+        width: 50%;
     }
+
+    .client__content {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
     .testimonial__container {
         padding: 1rem 0 1.5rem 0;
+    }
+
+    .testimonial-item {
+        padding: 1.5rem;
     }
 
     .testimonial__list {

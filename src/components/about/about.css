@@ -15,14 +15,14 @@
     margin: 0 auto;
 }
 
-.about__content-introduce .achievement-list {
+.achievement-list {
     padding-top: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
-.about__content-introduce .achievement-list .achievement-item {
+.achievement-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +32,20 @@
     border-radius: .3rem;
 }
 
+.achievement-item .achievement-icon {
+    color: blue;    
+    font-size: 1.5rem;
+    margin-bottom: .3rem;
+}
+
+.achievement-item h5 {
+    font-size: .9rem;
+}
+
+.achievement-item small {
+    font-size: .7rem;
+}
+
 .about__content-skills {
     display: flex;
     flex-direction: column;
@@ -39,28 +53,39 @@
     align-items: center;
 }
 
-.about__content-skills .skill-explanation {
+.skill-explanation {
     width: 80%;
 }
 
-.about__content-skills .skill-list {
+.skill-list {
     padding-top: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: .8rem;
 }
 
-.about__content-skills .skill-list .skill-item {
+.skill-item {
     display: flex;
+    justify-content: left;
     padding: .5rem;
-    gap: .8rem;
     border: 1px solid blue;
     border-radius: .3rem;
 }
 
-.skill-icon, .achievement-icon {
+.skill-icon {
     color: blue;
     font-size: 1.3rem;
+    margin-right: 1rem;
+    margin-top: .5px;
+}
+
+.skill-text h5 {
+    font-size: .9rem;
+    margin-bottom: -.5rem;
+}
+
+.skill-text small {
+    font-size: .7rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -78,7 +103,7 @@
         padding: 1rem 0;
     }
 
-    .about__content-skills .skill-explanation h2 {
+    .skill-explanation h2 {
         text-align: center;
     }
 }
@@ -88,7 +113,7 @@
         width: 90%;
     }
 
-    .about__content-introduce .achievement-list {
+    .achievement-list {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -96,13 +121,17 @@
         padding: 1rem 0;
     }
 
-    .about__content-skills .skill-explanation {
+    .skill-explanation {
         width: 90%;
     }
 
-    .about__content-skills .skill-list {
+    .skill-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: .8rem;
+    }
+
+    .skill-icon {
+        margin-right: .5rem;
     }
 }

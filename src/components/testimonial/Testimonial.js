@@ -45,11 +45,13 @@ const Testimonial = () => {
       >
         {data.map((datum, index) => (
           <SwiperSlide className="testimonial-item" key={index}>
-            <div className="client__avatar">
-              <img src={datum.avatar} alt={datum.name} />
+            <div className="client__content">
+              <div className="client__avatar">
+                <img src={datum.avatar} alt={datum.name} />
+              </div>
+              <h5 className="client__name">{datum.name}</h5>
+              <p className="client__review">{datum.review}</p>
             </div>
-            <h5 className="client__name">{datum.name}</h5>
-            <p>{datum.review}</p>
           </SwiperSlide>
       ))}
       </Swiper>
